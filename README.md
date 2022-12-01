@@ -1,6 +1,8 @@
 # ParadoxRPG
 Discord bot RPG game related to streaming
 
+This is still in active development!
+
 Ignore express and electron files, they are for displaying leaderboards in the future as well as admin panel.
 All pushes, changes, commits, etc go into dev branch please.
 
