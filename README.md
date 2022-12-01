@@ -13,3 +13,5 @@ DBHOST="DATABASE_SERVER"
 DBUSER="DATABASE_USER" 
 DBPASS="DATABASE_PASSWORD" 
 DBDB="DATABASE_NAME"``` 
+
+Added ``players.sql`` file to see the way database is set.
