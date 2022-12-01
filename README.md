@@ -4,6 +4,8 @@ Discord bot RPG game related to streaming
 Ignore express and electron files, they are for displaying leaderboards in the future as well as admin panel.
 All pushes, changes, commits, etc go into dev branch please.
 
+Added ``players.sql`` file to see the way database is set.
+
 Make sure to create .env file:
 
 ```MYTOKEN="BOT_TOKEN" 
@@ -12,6 +14,4 @@ OWNERID="DISCORD_OWNER_ID"
 DBHOST="DATABASE_SERVER" 
 DBUSER="DATABASE_USER" 
 DBPASS="DATABASE_PASSWORD" 
-DBDB="DATABASE_NAME"``` 
-
-Added ``players.sql`` file to see the way database is set.
+DBDB="DATABASE_NAME"```
