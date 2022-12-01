@@ -1,0 +1,31 @@
+{
+  "name": "botgame",
+  "version": "0.0.0",
+  "private": true,
+  "scripts": {
+    "start": "concurrently --kill-others \"nodemon ./bin/www\" \"forever start index.js\""
+  },
+  "dependencies": {
+    "command-cooldown": "^1.0.0",
+    "concurrently": "^7.5.0",
+    "cookie-parser": "~1.4.4",
+    "debug": "~2.6.9",
+    "discord-eris-embeds": "^1.0.4",
+    "dotenv": "^16.0.3",
+    "ejs": "~2.6.1",
+    "eris": "^0.17.1",
+    "eris-additions": "^1.4.1",
+    "express": "~4.16.1",
+    "forever-monitor": "^3.0.3",
+    "globby": "^13.1.2",
+    "http-errors": "~1.6.3",
+    "morgan": "~1.9.1",
+    "mysql": "^2.18.1",
+    "nodemon": "^2.0.20",
+    "pkg": "^5.8.0",
+    "simple-eris-command": "^1.4.2"
+  },
+  "devDependencies": {
+    "electron": "^21.2.2"
+  }
+}

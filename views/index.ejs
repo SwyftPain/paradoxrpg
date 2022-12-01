@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title><%= title %></title>
+      <link rel='stylesheet' href='/stylesheets/style.css' />
+    </head>
+    <style type="text/css">
+    body {
+      background-color: #212121;
+      color: white;
+    }
+    .tg  {border-collapse:collapse;border-spacing:0;}
+    .tg td{border-color:black;border-style:solid;border-width:1px;font-family:Arial, sans-serif;font-size:14px;
+      overflow:hidden;padding:10px 5px;word-break:normal;}
+    .tg th{border-color:black;border-style:solid;border-width:1px;font-family:Arial, sans-serif;font-size:14px;
+      font-weight:normal;overflow:hidden;padding:10px 5px;word-break:normal;}
+    .tg .tg-0lax{text-align:left;vertical-align:top}
+    </style>
+    <body>
+      <center>
+        <h1><%= title %></h1>
+          <p>
+            <form method="post" action="/edit.php">
+              <table class="tg" style="width:100%;">
+                <thead>
+                  <tr>
+                    <th class="tg-0lax"><center>Name</center></th>
+                    <th class="tg-0lax"><center>Response</center></th>
+                    <th class="tg-0lax"><center>Enabled</center></th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <% rows.forEach(function(student) { %>
+                    <tr>
+                      <input type="hidden" name="id[]" value="<%= student.Id %>">
+                      <td class="tg-0lax"><center><input type="text"
+                            name="namecmd[]" value="<%= student.Name %>"
+                          style="padding: 0.5em;border-radius:6px;width:95%;"></center></td>
+                      <td class="tg-0lax"><center><input type="text"
+                            name="responsecmd[]" value="<%= student.Response %>"
+                          style="padding: 0.5em;border-radius:6px;width:95%;"></center></td>
+                      <td class="tg-0lax"><center>
+                          <% if(student.Enabled == '1') { %>
+                            <select name="enabledcmd[]" style="padding:
+                              0.5em;border-radius:6px;width:95%;"><option
+                                selected value="1">Yes</option><option
+                                value="0">No</option></select>
+                            <% } else { %>
+                              <select name="enabledcmd[]" style="padding:
+                                0.5em;border-radius:6px;width:95%;"><option
+                                  value="1">Yes</option><option selected
+                                  value="0">No</option></select>
+                              <% } %>
+                              </center></td>
+                          </tr>
+                          <% }); %>
+                          </tbody>
+                        </table>
+                        <br>
+                        <input type="submit" value="Edit" style="padding:
+                          0.5em;width:50%;cursor:pointer;">
+                      </form>
+                    </p>
+                  </center>
+                </body>
+              </html>
