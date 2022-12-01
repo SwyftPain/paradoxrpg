@@ -1,4 +1,4 @@
-# paradoxrpg
+# ParadoxRPG
 Discord bot RPG game related to streaming
 
-Ignore express and electron files, they are for displaying leaderboards in the future.
+Ignore express and electron files, they are for displaying leaderboards in the future as well as admin panel.
