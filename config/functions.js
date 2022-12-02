@@ -32,11 +32,11 @@ function getRandom(min, max) {
 }
 
 // percentage
-
 function percentage(partialValue, totalValue) {
   return (100 * partialValue) / totalValue;
 }
 
+// capitalize first letter
 function capitalizeFirstLetter(string) {
   return string.charAt(0).toUpperCase() + string.slice(1);
 }
