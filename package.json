@@ -12,7 +12,7 @@
     "debug": "~2.6.9",
     "discord-eris-embeds": "^1.0.4",
     "dotenv": "^16.0.3",
-    "ejs": "~2.6.1",
+    "ejs": "~3.1.10",
     "eris": "^0.17.1",
     "eris-additions": "^1.4.1",
     "express": "~4.16.1",
